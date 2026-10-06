@@ -1,0 +1,33 @@
+# Secrets / local environment (never commit)
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs / temporary artifacts
+*.log
+npm-debug.log*
+*.tmp
+
+# Stray machine-specific test artifacts (accidental Windows-path-named file, backups)
+C:*
+backend/server.js.backup
+
+# Machine-local tool symlink (absolute path — content lives in .agents/)
+.claude/
+
+# AI dev-loop controller runtime locks/output
+# (planner/run-cycle source and .ai state files ARE committed)
+.ai/.cycle.lock
+.ai/OPENCODE_LAST_OUTPUT.md
